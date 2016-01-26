@@ -12,7 +12,8 @@ RUN apt-get update && \
       php5-gd \
       php5-ldap \
       php5-mysql \
-      php5-pgsql
+      php5-pgsql \
+	  wget
 
 COPY apache_default /etc/apache2/sites-available/default
 COPY run /usr/local/bin/run
